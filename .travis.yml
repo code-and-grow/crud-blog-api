@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: HwmQ+Vh+no1aSRY4U2imHVzqlnilyNqaGoN3+rj6HAVpFi28u9Y0XybJKXUL1qr0LwyR+E0Q4gMP6Gahofp2dYkBC47kVPQ1wlmz3UPe5kvy4OOe+WAD18AFRSMRJrj18H1mcVVJ2/lcCRzN+OwRZSbX+9gQHti2Lq1n6OUojYnrH02Lh15Fr4PLAJJZoiYxeBEb5FIZtb/LSUmLC9A7oqh031lhY+sYolx93g7a+cNXFlI1O7fxEJ/WtmRCvNHzHcwJ54fdas4B5CEAWx0vJlPU0UE8YUDOibwTQV2MVArv3w1zSeXlV3AoOglw+yVgvBSSQ/IwNYLIom+t5Nbw/LRUmz0p0X8/KziX6XSmHE9iLE5405kgLMyKION/gvKT+D/VvAJTexKgPlMEybXRdQ5YZ5diWEhBQ6mZvjqxLffYEpCgCLPhB9qzOIcuCkJkpVP/N79+UPdPsj1BTFbqmOf767w9XoRUSSOM24gBQgQkqOqIahnDic/zmG+zooIeG6rAcb4BugwUQ2JF+HUe6Uk7VhEm2FFFOH/RjRH1uwKbULQiGh2uRDiS+bMuOfasptyw15mIVonPYWwcBuE10eQ3p4YdN93NIDBCcF1J7YWsmQYz9re413Nc9OsN0Huuou4HQgGXzzxRp26KarjOs8po9pXnWUMZNu1mYbQVkRU=
+  app: crud-blog-api
+  on:
+    repo: pjotrpaan/crud-blog-api
