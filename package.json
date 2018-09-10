@@ -4,7 +4,7 @@
   "description": "CRUD Blog API challenge for Thinkful Full Stack Flex bootcamp",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --exit"
   },
   "keywords": [
     "CRUD",
@@ -24,5 +24,10 @@
     "morgan": "^1.9.0",
     "nodemon": "^1.18.4",
     "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.2.0",
+    "mocha": "^5.2.0"
   }
 }
