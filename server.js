@@ -20,8 +20,8 @@ let server;
 function runServer() {
   const port = process.env.PORT || 8080;
   return new Promise ( (resolve, reject) => {
-    server = app;
-    server.listen(port, () => {
+    server = app
+    .listen(port, () => {
       console.log(`Server has started and app is listening on port ${port}`);
       resolve(server);
     })
@@ -51,8 +51,8 @@ if(require.main === module) {
 }
 
 // Listen for requests
-app.listen(process.env.PORT || 8080, () => {
-  console.log(`Your app is listening on port ${process.env.PORT || 8080}`);
-});
+// app.listen(process.env.PORT || 8080, () => {
+//   console.log(`Your app is listening on port ${process.env.PORT || 8080}`);
+// });
 
 module.exports = {app, runServer, closeServer};
